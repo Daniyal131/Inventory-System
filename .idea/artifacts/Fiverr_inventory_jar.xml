@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Fiverr_inventory:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Fiverr_inventory_jar</output-path>
+    <root id="archive" name="Fiverr_inventory.jar">
+      <element id="module-output" name="Fiverr_inventory" />
+    </root>
+  </artifact>
+</component>
