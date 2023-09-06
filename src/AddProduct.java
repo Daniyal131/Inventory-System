@@ -762,53 +762,6 @@ public class AddProduct {
                     RemarksTextarea.setText("-");
                 }
 
-
-
-
-
-//                String mainFolderPath = "product";
-//                File mainFolder = new File(mainFolderPath);
-//
-//                if (mainFolder.exists() && mainFolder.isDirectory()) {
-//                    File[] subfolders = mainFolder.listFiles(File::isDirectory);
-//
-//                    if (subfolders != null) {
-//                        int subfolderCount = subfolders.length;
-//                        Set<String> set = new HashSet<String>(){{
-//                            for (int i =0;i<subfolderCount;i++)
-//                            {
-//                                try {
-//                                    String filepath = (String) model.getValueAt(i,6);
-//
-//                                    Scanner balance = new Scanner(new File("product/"+filepath+"/Barcode.txt"));
-//                                    add(balance.next());
-//
-//
-//
-//                                } catch (Exception E) {
-//                                    System.out.println("Account Doesn't Exist");
-//                                }
-//
-//                            }
-//
-//                        }};
-//
-//                        if(set.contains(BarcodeField.getText()))
-//                        {
-//                            JOptionPane.showMessageDialog(Productframe,"Barcode Already Exists","Barcode error!",JOptionPane.INFORMATION_MESSAGE);
-//                            BarcodeField.setText("");
-//                            return;
-//                        }
-//                    } else {
-//                        System.out.println("No subfolders found.");
-//                    }
-//                } else {
-//                    System.out.println("Main folder does not exist or is not a directory.");
-//                }
-
-
-
-
                 String yes_no_option;
                 if(yesRadioButton.isSelected())
                 {
@@ -835,12 +788,6 @@ public class AddProduct {
                                 RemarksTextarea.getText()
 
                         };
-
-                String Description = DescriptionTextarea.getText();
-                String Remarks= RemarksTextarea.getText();
-                String brand = (String) BrandDropdownlist.getSelectedItem();
-                String category = (String) CategoryDropdownlist.getSelectedItem();
-                boolean yesRadiobutton = yesRadioButton.isSelected();
 
 
                 File folder = new File("product/"+TextFieldData[1]);

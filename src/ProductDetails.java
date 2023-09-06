@@ -314,8 +314,6 @@ public class ProductDetails {
                                             for (File textFile : textFiles) {
                                                 try (BufferedReader reader = new BufferedReader(new FileReader(textFile))) {
                                                     String line;
-//                                        for(int i=0;i<6;i++)
-////                                        {
                                                     while ((line = reader.readLine()) != null) {
                                                         // Process the content of the text document
                                                         data[j] = line;
@@ -328,11 +326,6 @@ public class ProductDetails {
                                             }
                                             for(int trav=0;trav<12;trav++)
                                             {
-//                                            if(data[trav].equals(searchPrductDetailfield.getText()))
-//                                            {
-////                                                model.addRow(data);
-//                                                continue;
-//                                            }
                                                 if((data[trav].startsWith(searchPrductDetailfield.getText())) && !(searchPrductDetailfield.getText().equals("")))
                                                 {
                                                     model.addRow(data);

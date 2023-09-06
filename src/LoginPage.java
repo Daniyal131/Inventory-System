@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class LoginPage {
 
+
     JFrame LoginFrame = new JFrame();
     JButton LoginButton = new JButton("Login");
     JButton Reset = new JButton("Reset");

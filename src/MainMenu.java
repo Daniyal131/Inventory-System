@@ -12,13 +12,9 @@ public class MainMenu {
 
 
     JButton ProductDetailButton = new JButton();
-//    JButton ClientDetailButton = new JButton();
-//    JButton TransactionDetailButton = new JButton();
     JButton AddProduct = new JButton();
-//    JButton AddCleint = new JButton();
     JButton LogoutButton = new JButton();
     JButton ChangePassword = new JButton();
-//    JButton DashboardButton = new JButton();
 
     MainMenu(Color background,Color foreground,Font font)
     {
@@ -27,13 +23,9 @@ public class MainMenu {
         MenuFrame.getContentPane().setForeground(foreground);
 
         MenuFrame.add(ProductDetailButton);
-//        MenuFrame.add(ClientDetailButton);
-//        MenuFrame.add(TransactionDetailButton);
         MenuFrame.add(LogoutButton);
         MenuFrame.add(ChangePassword);
-//        MenuFrame.add(AddCleint);
         MenuFrame.add(AddProduct);
-//        MenuFrame.add(DashboardButton);
 
         MenuFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MenuFrame.setSize(1280,720);
@@ -42,37 +34,6 @@ public class MainMenu {
         MenuFrame.setResizable(false);
         MenuFrame.setLocationRelativeTo(null);
         MenuFrame.setVisible(true);
-
-//        DashboardButton.setBounds(550,50,250,50);
-//        DashboardButton.setFont(font);
-//        DashboardButton.setText("Dashboard");
-//        DashboardButton.setForeground(foreground);
-//        DashboardButton.setBackground(background);
-//        DashboardButton.setBorder(BorderFactory.createLineBorder(background, 2,false));
-//        DashboardButton.setFocusable(false);
-//
-//        DashboardButton.addMouseListener(new MouseAdapter() {  //change cursor on mouse hover
-//            public void mouseEntered(MouseEvent evt) {
-//
-//                DashboardButton.setBackground(foreground);
-//                DashboardButton.setForeground(background);
-//                DashboardButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-//            }
-//
-//            public void mouseExited(MouseEvent evt) {
-//
-//                DashboardButton.setBackground(background);
-//                DashboardButton.setForeground(foreground);
-//                DashboardButton.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-//            }
-//
-//
-//            public void mouseClicked(MouseEvent e) {
-//                MenuFrame.dispose();
-//                new Dashboard(MenuFrame.getContentPane().getBackground(),MenuFrame.getContentPane().getForeground(),font);
-//
-//            }
-//        });
 
 
         ProductDetailButton.setBounds(550,250,250,50);
@@ -106,68 +67,6 @@ public class MainMenu {
             }
         });
 
-//        ClientDetailButton.setBounds(540,250,250,50);
-//        ClientDetailButton.setFont(font);
-//        ClientDetailButton.setText("Client Detail");
-//        ClientDetailButton.setForeground(foreground);
-//        ClientDetailButton.setBackground(background);
-//        ClientDetailButton.setBorder(BorderFactory.createLineBorder(background));
-//        ClientDetailButton.setFocusable(false);
-//
-//        ClientDetailButton.addMouseListener(new MouseAdapter() {  //change cursor on mouse hover
-//            public void mouseEntered(MouseEvent evt) {
-//
-//                ClientDetailButton.setBackground(foreground);
-//                ClientDetailButton.setForeground(background);
-//                ClientDetailButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-//            }
-//
-//            public void mouseExited(MouseEvent evt) {
-//
-//                ClientDetailButton.setBackground(background);
-//                ClientDetailButton.setForeground(foreground);
-//                ClientDetailButton.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-//            }
-//
-//
-//            public void mouseClicked(MouseEvent e) {
-//
-//                MenuFrame.dispose();
-//                new ClientDetail(MenuFrame.getContentPane().getBackground(),MenuFrame.getContentPane().getForeground(),font);
-//            }
-//        });
-//
-//        TransactionDetailButton.setBounds(550,350,250,50);
-//        TransactionDetailButton.setFont(font);
-//        TransactionDetailButton.setText("Transaction Detail");
-//        TransactionDetailButton.setForeground(foreground);
-//        TransactionDetailButton.setBackground(background);
-//        TransactionDetailButton.setBorder(BorderFactory.createLineBorder(background));
-//        TransactionDetailButton.setFocusable(false);
-//
-//        TransactionDetailButton.addMouseListener(new MouseAdapter() {  //change cursor on mouse hover
-//            public void mouseEntered(MouseEvent evt) {
-//
-//                TransactionDetailButton.setBackground(foreground);
-//                TransactionDetailButton.setForeground(background);
-//                TransactionDetailButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-//            }
-//
-//            public void mouseExited(MouseEvent evt) {
-//
-//                TransactionDetailButton.setBackground(background);
-//                TransactionDetailButton.setForeground(foreground);
-//                TransactionDetailButton.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-//            }
-//
-//            public void mousePressed(MouseEvent e) {
-//
-//                MenuFrame.dispose();
-//                new TransactionDetail(MenuFrame.getContentPane().getBackground(),MenuFrame.getContentPane().getForeground(),font);
-//
-//            }
-//        });
-
         AddProduct.setBounds(550,350,250,50);
         AddProduct.setFont(font);
         AddProduct.setText("Add Product");
@@ -198,38 +97,6 @@ public class MainMenu {
 
             }
         });
-
-
-//        AddCleint.setBounds(550,550,250,50);
-//        AddCleint.setFont(font);
-//        AddCleint.setText("Add Client");
-//        AddCleint.setForeground(foreground);
-//        AddCleint.setBackground(background);
-//        AddCleint.setBorder(BorderFactory.createLineBorder(background));
-//        AddCleint.setFocusable(false);
-//
-//        AddCleint.addMouseListener(new MouseAdapter() {  //change cursor on mouse hover
-//            public void mouseEntered(MouseEvent evt) {
-//
-//                AddCleint.setBackground(foreground);
-//                AddCleint.setForeground(background);
-//                AddCleint.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-//            }
-//
-//            public void mouseExited(MouseEvent evt) {
-//
-//                AddCleint.setBackground(background);
-//                AddCleint.setForeground(foreground);
-//                AddCleint.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-//            }
-//
-//            public void mousePressed(MouseEvent e) {
-//
-//                MenuFrame.dispose();
-//                new AddClient(MenuFrame.getContentPane().getBackground(),MenuFrame.getContentPane().getForeground(),font);
-//
-//            }
-//        });
 
 
         LogoutButton.setBounds(5,620,120,50);
